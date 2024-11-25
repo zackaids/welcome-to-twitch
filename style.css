@@ -1,0 +1,113 @@
+body {
+  font-family: Inter, sans-serif;
+  background-image: linear-gradient(
+    90deg,
+    #3a0078 0%,
+    #3301b0 35%,
+    #9104ec 100%
+  );
+  margin: 20px;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+.listContainer {
+  background-color: black;
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px white;
+}
+ol {
+  counter-reset: item;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+.aboutTwitch,
+.topStreamers,
+.howToStart {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.logoTwitch {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 600px;
+}
+.centeringLogo {
+  text-align: center;
+}
+
+h1 {
+  background-color: black;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 10px 5px 5px white;
+  padding: 20px;
+  width: 600px;
+}
+.centerHeading {
+  text-align: center;
+}
+p {
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+}
+.aboutDescription {
+  background-color: black;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 10px 5px 5px white;
+  padding: 20px;
+  width: 600px;
+}
+
+.leftSidePicture,
+.rightSidePicture {
+  position: fixed;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+}
+.rightSidePicture {
+  right: 0;
+}
+.leftSidePicture {
+  left: 0;
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-loop 20s linear infinite;
+}
+
+.scrollContainer img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
